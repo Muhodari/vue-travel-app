@@ -8,7 +8,7 @@
         <router-link
           :to="{
             name: 'DestinationDetails',
-            params: { id: destination.id }
+            params: { slud: destination.slug }
           }"
         >
           <h2>{{ destination.name }}</h2>
@@ -17,7 +17,7 @@
           <router-link
             :to="{
               name: 'DestinationDetails',
-              params: { id: destination.id }
+              params: { slug: destination.slug }
             }"
           >
             <img

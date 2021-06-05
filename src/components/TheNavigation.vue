@@ -16,7 +16,7 @@
         <router-link
           :to="{
             name: 'DestinationDetails',
-            params: { id: destination.id }
+            params: { slug: destination.slug }
           }"
         >
           {{ destination.name }}
@@ -31,7 +31,6 @@ import store from "@/store";
 export default {
   data() {
     return {
-      destination:this.$route.params.id,
       destinations: store.destinations
     };
   }
