@@ -13,6 +13,7 @@
         :key="destination.name"
         class="links"
       >
+      
         <router-link
           :to="{
             name: 'DestinationDetails',
